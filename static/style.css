@@ -1,0 +1,47 @@
+.container {
+    margin-top: 5%;
+}
+
+.mgbtm4{
+    margin-bottom: 4%;
+}
+
+.read {
+    margin-bottom: 10%;
+}
+
+.ml{
+    margin-left: -1.5%;
+}
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+    padding-right: 50px;
+    padding-top: 10px; 
+    
+}
+
+.mgtp {
+    margin-top: 10px;
+}
+
+
+.box {
+    width: 80%;
+    height: 100px;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding-top: 9px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

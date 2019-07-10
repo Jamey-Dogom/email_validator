@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Email Validator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="read">
+            <div class="box green">
+                <h3 class = "mgtp">The email address you entered {{ent}} is a VALID email address! Thank you!</h3>
+            </div>
+
+            <h3 class="mgbtm4">Email Addresses Entered:</h3>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Email</th>
+                        <th scope="col">Created At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for email in all_emails %}
+                    <tr>
+                        <th scope="row">{{email["email"]}}</th>
+                        <td>{{email["created_at"]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
